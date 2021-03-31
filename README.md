@@ -1,0 +1,1 @@
+I am working on a webpage to share with friends to help pick movies. it works like tinder in that you say what movies you might want to watch, then you can check with your partner to see if you have any movies in common.
