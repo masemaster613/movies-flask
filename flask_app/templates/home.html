@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <h2><a class="article-title" href="#">{{movies[0].title}} {{movies[0].released}}</a></h2>
+            <img src={{movies[0].image}} alt={{movies[0].title}} class='movie-img'>
+            <p>{{movies[0].synopsis}}</p>
+            <form method='POST' action=''>
+              {{form.hidden_tag()}}
+              <div class='form-group'>
+                <div class='row'>
+                  <div class='col-2'></div>
+                  <div class='col-3' style='text-align: center;'>
+                    {{form.like(class="btn-lg btn-success like_btn")}}
+                  </div>
+                  <div class='col-2'></div>
+                  <div class='col-3' style='text-align: center;'>
+                    {{form.dislike(class="btn-lg btn-danger like_btn")}}
+                  </div>
+                  <div class='col-2'></div>
+                <div>
+              </div>
+            </form>
+          </div>
+        </article>
+{% endblock content %}
